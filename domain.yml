@@ -1,0 +1,80 @@
+version: "3.1"
+
+intents:
+- greet
+- mood_great
+- mood_sad
+- affirm
+- goodbye
+- inform_condition
+- monitor_condition_diabetes
+- monitor_condition_hypertension
+- manage_condition_diabetes
+- manage_condition_hypertension
+- mental_health_support
+- hypertension_prevention
+- diabetes_prevention
+
+actions:
+- utter_manage_condition_hypertension
+- utter_inform_condition
+- utter_happy
+- utter_greet
+- utter_goodbye
+- utter_monitor_condition_diabetes
+- utter_manage_condition_diabetes
+- action_mental_health_support
+- action_diabetes_prevention
+- action_hypertension_prevention
+- utter_monitor_condition_hypertension
+
+
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I assist you today?"
+
+  utter_happy:
+  - text: "I'm happy to help you!"
+
+  utter_mood_great:
+  - text: "Glad to hear that! Is there anything else I can help you with?"
+
+  utter_mood_sad:
+  - text: "I'm sorry to hear that. How can I assist you today?"
+
+  utter_affirmation:
+  - text: "Great, let me know how else I can assist you."
+
+  utter_deny:
+  - text: "No problem, let me know if there's anything else you need."
+
+  utter_inform_condition:
+  - text: "Sure, A chronic condition is a health condition or disease that persists over a long period of time, usually over three months or more. Chronic conditions can be caused by a variety of factors, such as genetic predisposition, lifestyle choices, environmental factors, or a combination of these factors.Examples of chronic conditions include diabetes, hypertension (high blood pressure), asthma, heart disease, chronic kidney disease, chronic obstructive pulmonary disease (COPD), and many others. These conditions often require ongoing management and treatment to control symptoms and prevent further complications.It's important to note that chronic conditions can impact a person's quality of life and may require significant lifestyle changes, such as changes to diet, exercise habits, medication management, and more. Proper management and support can help individuals with chronic conditions live healthy and fulfilling lives."
+
+  utter_monitor_condition_hypertension:
+  - text: "Monitoring your blood pressure at home can be a helpful way to track your health and work with your healthcare provider to manage hypertension or other health concerns. Here are the steps to monitor your blood pressure at home:Purchase a home blood pressure monitor: You can purchase a blood pressure monitor at most pharmacies or online. Make sure to choose a monitor that has been validated for accuracy by a recognized organization such as the British Hypertension Society or the Association for the Advancement of Medical Instrumentation. Choose the right cuff size: Make sure to choose a cuff size that fits your arm properly. The cuff should cover about 80% of your upper arm, and should not be too tight or too loose.Find a quiet and comfortable location: Choose a quiet and comfortable location to take your blood pressure, where you can sit down and relax for a few minutes before taking the measurement. Position yourself properly: Sit down with your back straight and feet flat on the floor. Rest your arm on a table or armrest with your palm facing up.Take the measurement: Follow the instructions that came with your blood pressure monitor to take the measurement. Make sure to take at least two readings, spaced a few minutes apart, and record the results.Share the results with your healthcare provider: Share the results of your home blood pressure monitoring with your healthcare provider at your next appointment, and work together to develop a plan to manage your blood pressure and overall health.It's important to note that home blood pressure monitoring should not replace regular visits to your healthcare provider. It can, however, be a helpful tool to track your blood pressure and work with your healthcare team to manage your health"
+
+  utter_manage_condition_diabetes:
+  - text: "Managing diabetes involves a combination of lifestyle changes and medical treatment. Here are some steps that can help manage diabetes:Follow a healthy diet: Eating a healthy, balanced diet that is low in sugar, fat, and processed foods can help manage diabetes. Focus on eating plenty of fruits, vegetables, whole grains, lean protein, and healthy fats.Get regular exercise: Regular physical activity can help manage diabetes by improving blood sugar control, reducing insulin resistance, and improving cardiovascular health. Aim for at least 30 minutes of moderate-intensity exercise most days of the week.Monitor blood sugar levels: Regular blood sugar monitoring can help track how well diabetes is being managed. Work with your healthcare provider to determine how often you should monitor your blood sugar levels.Take medications as prescribed: Depending on the type and severity of diabetes, medications such as insulin, oral medications, or other injectables may be prescribed to help manage blood sugar levels. It's important to take these medications as prescribed by your healthcare provider.Maintain a healthy weight: Maintaining a healthy weight can help manage diabetes and improve overall health. Work with your healthcare provider to determine a healthy weight goal and develop a plan to achieve it. Manage stress: Stress can impact blood sugar levels and overall health. Strategies such as meditation, mindfulness, yoga, and other stress-management techniques can help manage stress and improve overall health.Regular check-ups: Regular check-ups with your healthcare provider can help monitor your diabetes and prevent complications. Your healthcare provider may recommend regular blood tests, eye exams, foot exams, and other tests to monitor your health.It's important to work with your healthcare provider to develop a personalized plan for managing diabetes. With proper management, individuals with diabetes can live healthy, active lives."
+  
+  utter_manage_condition_hypertension:
+  - text: "Managing hypertension, or high blood pressure, involves a combination of lifestyle changes and medical treatment. Here are some steps that can help manage hypertension.Follow a healthy diet: Eating a healthy, balanced diet that is low in salt, fat, and processed foods can help manage hypertension. Focus on eating plenty of fruits, vegetables, whole grains, lean protein, and healthy fats.Get regular exercise: Regular physical activity can help manage hypertension by reducing blood pressure, improving cardiovascular health, and reducing stress. Aim for at least 30 minutes of moderate-intensity exercise most days of the week.Monitor blood pressure levels: Regular blood pressure monitoring can help track how well hypertension is being managed. Work with your healthcare provider to determine how often you should monitor your blood pressure levels.Take medications as prescribed: Depending on the severity of hypertension, medications such as diuretics, ACE inhibitors, calcium channel blockers, or beta-blockers may be prescribed to help manage blood pressure levels. It's important to take these medications as prescribed by your healthcare provider.Maintain a healthy weight: Maintaining a healthy weight can help manage hypertension and improve overall health. Work with your healthcare provider to determine a healthy weight goal and develop a plan to achieve it.Manage stress: Stress can impact blood pressure levels and overall health. Strategies such as meditation, mindfulness, yoga, and other stress-management techniques can help manage stress and improve overall health.Limit alcohol intake: Drinking too much alcohol can raise blood pressure levels. Limiting alcohol intake to no more than one drink per day for women and two drinks per day for men can help manage hypertension.It's important to work with your healthcare provider to develop a personalized plan for managing hypertension. With proper management, individuals with hypertension can live healthy, active lives and reduce their risk of complications such as heart disease and stroke"
+
+  utter_monitor_condition_diabetes:
+  - text: "Monitoring diabetes involves tracking blood sugar levels and other health indicators. Here are some steps to monitor diabetes:Check blood sugar levels: Blood sugar levels should be checked regularly, typically multiple times a day for individuals with diabetes. Blood sugar testing can be done at home using a blood glucose meter or continuous glucose monitoring (CGM) device. Work with your healthcare provider to determine how often you should check your blood sugar levels.Keep track of blood sugar levels: Keeping a record of blood sugar levels can help track trends and patterns over time. Use a logbook, app, or other tools to record blood sugar levels and share this information with your healthcare provider.Monitor other health indicators: In addition to blood sugar levels, it's important to monitor other health indicators such as blood pressure, cholesterol levels, and kidney function. Your healthcare provider may recommend regular tests to monitor these health indicators.Watch for symptoms: Be aware of symptoms of high or low blood sugar levels, such as increased thirst, frequent urination, blurred vision, fatigue, or confusion. If you experience any of these symptoms, check your blood sugar levels and follow your healthcare provider's instructions.Attend regular check-ups: Regular check-ups with your healthcare provider can help monitor your diabetes and prevent complications. Your healthcare provider may recommend regular blood tests, eye exams, foot exams, and other tests to monitor your health.It's important to work with your healthcare provider to develop a personalized plan for monitoring diabetes. With proper monitoring and management, individuals with diabetes can reduce their risk of complications and maintain good health."
+
+  utter_mental_health_support:
+  - text: "Mental health is an important aspect of managing a chronic condition. Here are some resources that may be helpful."
+
+  utter_hypertension_prevention:
+  - text: "Preventing hypertension, or high blood pressure, involves making lifestyle changes and managing risk factors. Here are some steps that can help prevent hypertension:Maintain a healthy weight: Maintaining a healthy weight is important for preventing hypertension. If you are overweight or obese, losing even a small amount of weight can help lower blood pressure.Follow a healthy diet: Eating a healthy, balanced diet that is low in salt, fat, and processed foods can help prevent hypertension. Focus on eating plenty of fruits, vegetables, whole grains, lean protein, and healthy fats.Exercise regularly: Regular physical activity can help prevent hypertension by improving cardiovascular health, reducing stress, and helping maintain a healthy weight. Aim for at least 30 minutes of moderate-intensity exercise most days of the week.Limit alcohol intake: Drinking too much alcohol can raise blood pressure levels. Limiting alcohol intake to no more than one drink per day for women and two drinks per day for men can help prevent hypertension.Quit smoking: Smoking can raise blood pressure levels and increase the risk of cardiovascular disease. Quitting smoking can help prevent hypertension and improve overall health.Manage stress: Chronic stress can raise blood pressure levels and increase the risk of hypertension. Strategies such as meditation, mindfulness, yoga, and other stress-management techniques can help prevent hypertension and improve overall health.Monitor blood pressure levels: Regular blood pressure monitoring can help track blood pressure levels and identify hypertension early. Work with your healthcare provider to determine how often you should monitor your blood pressure levels."
+
+  utter_diabetes_prevention:
+  - text: "There are several ways to prevent diabetes:Maintain a healthy weight: Being overweight or obese increases the risk of developing type 2 diabetes. Losing even a small amount of weight can significantly reduce the risk.Exercise regularly: Regular physical activity can help prevent diabetes by improving insulin sensitivity and glucose metabolism. Aim for at least 30 minutes of moderate-intensity exercise, such as brisk walking, most days of the week.Eat a healthy diet: A diet rich in fruits, vegetables, whole grains, and lean protein can help prevent diabetes. Avoid processed foods, sugary drinks, and foods high in saturated and trans fats.Quit smoking: Smoking increases the risk of developing diabetes, so quitting smoking can help prevent it.Get regular check-ups: Regular check-ups with your doctor can help detect early signs of diabetes and other health problems. If you have a family history of diabetes, you may need to be screened more frequently.Manage stress: Chronic stress can increase the risk of developing diabetes. Finding ways to manage stress, such as meditation or yoga, can help reduce the risk.Limit alcohol intake: Drinking too much alcohol can increase the risk of developing diabetes. If you drink, do so in moderation (up to one drink per day for women and up to two drinks per day for men).By following these tips, you can reduce your risk of developing diabetes and improve your overall health."
+  utter_goodbye:
+  - text: "Alright, goodbye and take care."
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
